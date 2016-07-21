@@ -1,0 +1,146 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,700,500italic,900,700italic,900italic)
+
+@import elements/variables
+    
+$card-background: $color-white
+$border-default: 1px solid $color-grey-light
+$radius-default: 2px
+$align-items-default: flex-end
+
+$card-width: (100% / $nb-card)
+@if $nb-card == 0  
+	$card-info-size: 65px 
+	$card-info-fontsize: 2.5rem
+@else
+	$card-info-size: 65px / ($nb-card - 1)
+	$card-info-fontsize: 2.5rem / ($nb-card - 1)
+
+// transitions
+$transitions-duration: 500ms
+$transitions-animations: ease-in-out
+
+@import elements/elements
+@import elements/cards
+    
+.pointer,
+.delete,
+.hover-link
+	cursor: pointer
+
+.hover-link
+	&:hover
+		background: $color-grey-light
+		transition: all $transitions-duration $transitions-animations
+
+.no-margin-left
+	margin-left: 0 !important
+
+.no-margin-right
+	margin-right: 0 !important
+
+.hover-rotate
+	transition: all $transitions-duration $transitions-animations
+	&:hover
+		transform: rotate(90deg)
+
+.list
+	width: 100%
+	display: block
+	margin-left: -0.75rem
+	padding: 0.35rem 0.75rem
+	transition: all $transitions-duration $transitions-animations
+
+.checkbox
+	position: relative
+	margin: 0 1em 0 0
+	cursor: pointer
+	&:after
+		content: ""
+		position: absolute
+		top: -0.125em
+		left: 0
+		width: 1.1em
+		height: 1.1em
+		background: $color-white
+		cursor: pointer
+	&:before
+		transition: all $transitions-duration $transitions-animations
+		content: ""
+		position: absolute
+		left: 0
+		z-index: 1
+		width: 0.75em
+		height: 0.75em
+		border: 1px solid #aaa	
+	&:checked
+		&:before
+			transform: rotate(-45deg)
+			height: .45em
+			border-color: black
+			border-top-style: none
+			border-right-style: none
+
+.bar-chart
+	display: flex
+	align-items: $align-items-default
+	height: 20px
+	width: 100%
+	.bar
+		width: 100%
+		border-top: 1px solid $color-blue
+		background-color: $color-blue-light
+
+.border-top
+	border-top: $border-default
+
+.error
+	border: solid 1px $color-red
+	background: #FEE
+
+.left
+	float: left
+
+.right
+	float: right
+
+.settings
+	@extend .right
+	cursor: pointer
+	font-size: 1.3em
+
+.right
+	margin-left: 0.35rem
+
+.red-background
+	background-color: $color-red
+.blue-background
+	background-color: $color-blue
+.grey-background
+	background-color: $color-grey
+.green-background
+	background-color: $color-green
+
+
+.material-icons
+	font-size: inherit	
+	&.md-red
+		color: $color-red
+	&.md-grey
+		color: $color-grey
+	&.md-white
+		color: $color-white
+	&.md-blue
+		color: $color-blue
+	&.md-green
+		color: $color-green
+
+.red-text
+	color: $color-red
+.grey-text
+	color: $color-grey
+.white-text
+	color: $color-white
+.blue-text
+	color: $color-blue
+.green-text
+	color: $color-green

@@ -1,0 +1,60 @@
+
+.card
+	width: $card-width
+	display: block
+	float: left
+
+.card-content
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1)
+	background: $card-background
+	border-radius: $radius-default
+	user-select: none
+	animation: fly-in-from-left $transitions-duration (2*$transitions-duration) ease both
+	transform-origin: top left
+	margin: 0 0.5rem 0.5rem
+	.action
+		padding: 0.3rem 0.75rem
+		border-left: $border-default
+	.separator
+		border-top: $border-default
+
+	.body
+		display: flex
+	.title
+		@extend .body
+		border: none
+		border-bottom: $border-default
+
+	.icon
+		flex: 0 0 1rem
+		padding: 0.3rem 0.75rem
+		text-align: center
+
+	.text
+		flex: 1
+		padding: 0.3rem 0.75rem
+	.text-center
+		@extend .text
+		text-align: center
+		text-overflow: ellipsis
+		overflow-x: hidden
+		white-space: nowrap
+	.text-value
+		@extend .text-center
+		font-size: $card-info-fontsize
+		height: $card-info-size
+		line-height: $card-info-size
+		.material-icons
+			padding-bottom: 0.4rem
+
+	.badge
+		padding: 0.10rem 0.35rem
+		border-radius: 1rem
+		margin: 0.20rem 0.40rem
+		.material-icons
+			margin-top: -0.1rem
+			text-align: center
+
+.header
+	.card-content
+		margin: 0 0 0.5rem

@@ -1,0 +1,266 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,700,500italic,900,700italic,900italic);
+/* line 1, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/elements/_elements.sass */
+* {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.2;
+  vertical-align: middle; }
+
+/* line 6, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/elements/_elements.sass */
+body {
+  background: #e5e5e5;
+  margin: 0;
+  height: auto; }
+
+/* line 11, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/elements/_elements.sass */
+h1 {
+  font-size: 1.2rem;
+  font-weight: 200;
+  text-align: center; }
+
+/* line 19, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/elements/_elements.sass */
+input[type=time]::-webkit-clear-button,
+input[type=time]::-webkit-outer-spin-button,
+input[type=time]::-webkit-inner-spin-button {
+  display: none; }
+
+/* line 22, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/elements/_elements.sass */
+input {
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  outline: none; }
+
+/* line 27, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/elements/_elements.sass */
+a {
+  display: flex;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  justify-content: space-between; }
+
+/* line 2, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/elements/_cards.sass */
+.card {
+  width: 50%;
+  display: block;
+  float: left; }
+
+/* line 7, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/elements/_cards.sass */
+.card-content {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: white;
+  border-radius: 2px;
+  user-select: none;
+  animation: fly-in-from-left 500ms 1000ms ease both;
+  transform-origin: top left;
+  margin: 0 0.5rem 0.5rem; }
+  /* line 15, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/elements/_cards.sass */
+  .card-content .action {
+    padding: 0.3rem 0.75rem;
+    border-left: 1px solid #e5e5e5; }
+  /* line 18, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/elements/_cards.sass */
+  .card-content .separator {
+    border-top: 1px solid #e5e5e5; }
+  /* line 21, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/elements/_cards.sass */
+  .card-content .body, .card-content .title {
+    display: flex; }
+  /* line 23, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/elements/_cards.sass */
+  .card-content .title {
+    border: none;
+    border-bottom: 1px solid #e5e5e5; }
+  /* line 28, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/elements/_cards.sass */
+  .card-content .icon {
+    flex: 0 0 1rem;
+    padding: 0.3rem 0.75rem;
+    text-align: center; }
+  /* line 33, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/elements/_cards.sass */
+  .card-content .text, .card-content .text-center, .card-content .text-value {
+    flex: 1;
+    padding: 0.3rem 0.75rem; }
+  /* line 36, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/elements/_cards.sass */
+  .card-content .text-center, .card-content .text-value {
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    white-space: nowrap; }
+  /* line 42, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/elements/_cards.sass */
+  .card-content .text-value {
+    font-size: 2.5rem;
+    height: 65px;
+    line-height: 65px; }
+    /* line 47, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/elements/_cards.sass */
+    .card-content .text-value .material-icons {
+      padding-bottom: 0.4rem; }
+  /* line 50, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/elements/_cards.sass */
+  .card-content .badge {
+    padding: 0.1rem 0.35rem;
+    border-radius: 1rem;
+    margin: 0.2rem 0.4rem; }
+    /* line 54, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/elements/_cards.sass */
+    .card-content .badge .material-icons {
+      margin-top: -0.1rem;
+      text-align: center; }
+
+/* line 59, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/elements/_cards.sass */
+.header .card-content {
+  margin: 0 0 0.5rem; }
+
+/* line 27, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+.pointer,
+.delete,
+.hover-link {
+  cursor: pointer; }
+
+/* line 31, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+.hover-link:hover {
+  background: #e5e5e5;
+  transition: all 500ms ease-in-out; }
+
+/* line 35, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+.no-margin-left {
+  margin-left: 0 !important; }
+
+/* line 38, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+.no-margin-right {
+  margin-right: 0 !important; }
+
+/* line 41, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+.hover-rotate {
+  transition: all 500ms ease-in-out; }
+  /* line 43, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+  .hover-rotate:hover {
+    transform: rotate(90deg); }
+
+/* line 46, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+.list {
+  width: 100%;
+  display: block;
+  margin-left: -0.75rem;
+  padding: 0.35rem 0.75rem;
+  transition: all 500ms ease-in-out; }
+
+/* line 53, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+.checkbox {
+  position: relative;
+  margin: 0 1em 0 0;
+  cursor: pointer; }
+  /* line 57, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+  .checkbox:after {
+    content: "";
+    position: absolute;
+    top: -0.125em;
+    left: 0;
+    width: 1.1em;
+    height: 1.1em;
+    background: white;
+    cursor: pointer; }
+  /* line 66, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+  .checkbox:before {
+    transition: all 500ms ease-in-out;
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width: 0.75em;
+    height: 0.75em;
+    border: 1px solid #aaa; }
+  /* line 76, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+  .checkbox:checked:before {
+    transform: rotate(-45deg);
+    height: .45em;
+    border-color: black;
+    border-top-style: none;
+    border-right-style: none; }
+
+/* line 83, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+.bar-chart {
+  display: flex;
+  align-items: flex-end;
+  height: 20px;
+  width: 100%; }
+  /* line 88, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+  .bar-chart .bar {
+    width: 100%;
+    border-top: 1px solid #1E88E5;
+    background-color: #64B5F6; }
+
+/* line 93, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+.border-top {
+  border-top: 1px solid #e5e5e5; }
+
+/* line 96, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+.error {
+  border: solid 1px #B71C1C;
+  background: #FEE; }
+
+/* line 100, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+.left {
+  float: left; }
+
+/* line 103, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+.right, .settings {
+  float: right; }
+
+/* line 106, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+.settings {
+  cursor: pointer;
+  font-size: 1.3em; }
+
+/* line 111, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+.right, .settings {
+  margin-left: 0.35rem; }
+
+/* line 114, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+.red-background {
+  background-color: #B71C1C; }
+
+/* line 116, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+.blue-background {
+  background-color: #1E88E5; }
+
+/* line 118, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+.grey-background {
+  background-color: grey; }
+
+/* line 120, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+.green-background {
+  background-color: #42d692; }
+
+/* line 124, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+.material-icons {
+  font-size: inherit; }
+  /* line 126, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+  .material-icons.md-red {
+    color: #B71C1C; }
+  /* line 128, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+  .material-icons.md-grey {
+    color: grey; }
+  /* line 130, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+  .material-icons.md-white {
+    color: white; }
+  /* line 132, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+  .material-icons.md-blue {
+    color: #1E88E5; }
+  /* line 134, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+  .material-icons.md-green {
+    color: #42d692; }
+
+/* line 137, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+.red-text {
+  color: #B71C1C; }
+
+/* line 139, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+.grey-text {
+  color: grey; }
+
+/* line 141, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+.white-text {
+  color: white; }
+
+/* line 143, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+.blue-text {
+  color: #1E88E5; }
+
+/* line 145, C:/Users/eliorzou/Documents/tools/veille/web-jeedom/site/css/style.sass */
+.green-text {
+  color: #42d692; }
+
+/*# sourceMappingURL=style.css.map */
